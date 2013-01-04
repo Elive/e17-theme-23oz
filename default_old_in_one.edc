@@ -21965,8 +21965,6 @@ image: "e17_icon_fileman_xml.png" COMP;
 
 FILEMAN_ICON_CLICKABLE("folder");
 FILEMAN_ICON_CLICKABLE("file");
-FILEMAN_ICON("home");
-FILEMAN_ICON("desktop");
 FILEMAN_ICON("hdd");
 FILEMAN_ICON("drive-harddisk");
 FILEMAN_ICON("drive-optical");
@@ -22038,7 +22036,7 @@ FILEMAN_MIME("application/x-font-pcf","psfu");
 FILEMAN_MIME("application/x-font-bdf","bdf");
 FILEMAN_MIME("text/css","css");
 FILEMAN_MIME("text/html","html");
-FILEMAN_MIME("text/html","htm");
+//FILEMAN_MIME("text/html","htm");
 FILEMAN_MIME("application/zip","zip");
 FILEMAN_MIME("application/x-gzip","gz");
 FILEMAN_MIME("application/x-bzip-compressed-tar","bz2");
@@ -22056,7 +22054,6 @@ FILEMAN_MIME("application/x-gz-font-linux-psf","open_font");
 FILEMAN_MIME("application/x-font-otf","otf");
 FILEMAN_MIME("application/x-font-type1","afm");
 FILEMAN_MIME("application/xml","xml");
-FILEMAN_MIME("application/x-deb","deb");
 FILEMAN_MIME("application/deb","deb");
 FILEMAN_MIME("application/x-rpm","rpm");
 FILEMAN_MIME("application/rpm","rpm");
@@ -27083,78 +27080,6 @@ group {
    }
 }
 group {
-   name: "e/icons/widget/new_dialog";
-   parts {
-      part {
-         name:          "icon";
-         mouse_events:  0;
-         description {
-            state:    "default" 0.0;
-            aspect:   0.83333333333 0.83333333333;
-            aspect_preference: BOTH;
-            max:      10 12;
-            image {
-               normal: "e17_icon_right_arrow.png";
-            }
-         }
-      }
-   }
-}
-group {
-   name: "e/icons/widget/up_arrow";
-   parts {
-      part {
-         name:          "icon";
-         mouse_events:  0;
-         description {
-            state:    "default" 0.0;
-            aspect:   0.83333333333 0.83333333333;
-            aspect_preference: BOTH;
-            max:      12 10;
-            image {
-               normal: "e17_icon_up_arrow.png";
-            }
-         }
-      }
-   }
-}
-group {
-   name: "e/icons/widget/down_arrow";
-   parts {
-      part {
-         name:          "icon";
-         mouse_events:  0;
-         description {
-            state:    "default" 0.0;
-            aspect:   0.83333333333 0.83333333333;
-            aspect_preference: BOTH;
-            max:      12 10;
-            image {
-               normal: "e17_icon_down_arrow.png";
-            }
-         }
-      }
-   }
-}
-group {
-   name: "e/icons/widget/up_dir";
-   parts {
-      part {
-         name:          "icon";
-         mouse_events:  0;
-         description {
-            state:    "default" 0.0;
-            aspect:   0.83333333333 0.83333333333;
-            aspect_preference: BOTH;
-            max:      12 10;
-            image {
-               normal: "e17_icon_up_arrow.png";
-            }
-         }
-      }
-   }
-}
-group {
    name: "e/icons/enlightenment/mouse";
    max:  64 64;
    parts {
@@ -27416,25 +27341,6 @@ group {
             max:      64 64;
             image {
                normal: "e17_icon_font.png";
-            }
-         }
-      }
-   }
-}
-group {
-   name: "e/icons/enlightenment/background";
-   max:  64 64;
-   parts {
-      part {
-         name:          "icon";
-         mouse_events:  0;
-         description {
-            state:    "default" 0.0;
-            aspect:   1.0 1.0;
-            aspect_preference: BOTH;
-            max:      64 64;
-            image {
-               normal: "e17_icon_background.png";
             }
          }
       }
